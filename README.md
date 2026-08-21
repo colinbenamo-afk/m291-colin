@@ -5,4 +5,7 @@ je suis en 2éme année de médiamaticien
 - faire des prompts correct
 ## Mon projet (idée en une phrase)
 non pas encore## Comment me trouver
-- GitHub : Colin
+- GitHub : Colin 
+
+_Repo cloné et ouvert dans VS Code._ 
+ 
