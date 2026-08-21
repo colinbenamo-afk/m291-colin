@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colin — Page de présentation</title>
+<style>
+  /* Couleurs sobres et police définies une seule fois pour toute la page */
+  :root {
+    --couleur-fond: #f5f4f1;
+    --couleur-carte: #ffffff;
+    --couleur-texte: #232323;
+    --couleur-accent: #508797;
+    --couleur-bordure: #dedad4;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 1.5rem;
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--couleur-accent);
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  section {
+    background-color: var(--couleur-carte);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    color: var(--couleur-accent);
+    margin-top: 0;
+  }
+
+  /* Les compétences s'affichent en colonne sur mobile et en ligne sur grand écran */
+  ul.competences {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  ul.competences li {
+    background-color: var(--couleur-fond);
+    border-left: 4px solid var(--couleur-accent);
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .lien-github {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--couleur-accent);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+
+  .lien-github:hover,
+  .lien-github:focus {
+    background-color: #1e454f;
+  }
+
+  @media (min-width: 500px) {
+    ul.competences {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    ul.competences li {
+      flex: 1 1 30%;
+    }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Colin</h1>
+      <p>Élève médiamaticien·ne CFC, 3e année</p>
+    </header>
+
+    <section>
+      <h2>À propos de moi</h2>
+      <p>J'aime le snowboard.</p>
+    </section>
+
+    <section>
+      <h2>Mes compétences et envies</h2>
+      <ul class="competences">
+        <li>Design graphique</li>
+        <li>Photographie</li>
+        <li>Programmation</li>
+      </ul>
+    </section>
+
+    <footer>
+      <!-- Le lien s'ouvre dans le même onglet, simple et clair pour la personne qui visite -->
+      <p>Vous pouvez consulter mes projets sur GitHub :</p>
+      <a class="lien-github" href="https://github.com/colinbenamo-afk">Voir mon profil GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>
