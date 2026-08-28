@@ -15,9 +15,9 @@ Règle : quota épuisé → je change d'outil. Je ne paie jamais.
 | 6 | Cursor Hobby | oui, sans carte | Agent limité, pas de chiffre officiel | oui | |
 
 ## Mon ordre si ça sature
-1. …
-2. …
-3. …
+1. claude
+2. Chat GPT
+3. Gemini
 
 ## Ce que je refuse
 - mettre une carte bancaire
