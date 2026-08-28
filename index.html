@@ -24,7 +24,7 @@
     background-color: var(--couleur-fond);
     color: var(--couleur-texte);
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    line-height: 1.6; 
   }
 
   main {
@@ -135,10 +135,19 @@
     </section>
 
     <footer>
+      <a id="magic" class="lien-github" href="https://github.com/colinbenamo-afk">
+  Voir mon profil GitHub
+</a>
       <!-- Le lien s'ouvre dans le même onglet, simple et clair pour la personne qui visite -->
       <p>Vous pouvez consulter mes projets sur GitHub :</p>
-      <a class="lien-github" href="https://github.com/colinbenamo-afk">Voir mon profil GitHub</a>
+     <!--  <a class="lien-github" href="https://github.com/colinbenamo-afk">Voir mon profil GitHub</a> -->
     </footer>
   </main>
+  <script>
+  document.getElementById("magic").addEventListener("click", function () {
+    this.style.backgroundColor = "#e36414";
+    this.style.color = "#ffffff";
+  });
+</script>
 </body>
 </html>
