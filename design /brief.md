@@ -18,12 +18,12 @@ Léa, 25 ans — serveuse dans un bar à Zinal (station de ski), a commencé le 
 ## Contenu de chaque écran
 
 **Écran 1 — Liste des planches**
-- On y voit : vignette, nom, niveau, style, prix de chaque planche
+- On y voit : photo, vignette, nom, niveau, style, prix de chaque planche
 - On peut y faire : filtrer par niveau et par style
 - Bouton principal : ouvrir une fiche (clic sur une planche)
 
 **Écran 2 — Fiche planche**
-- On y voit : photo, marque, modèle, niveau, style, taille, flex, prix
+- On y voit : photos, marque, modèle, niveau, style, taille, flex, prix
 - On peut y faire : lire les caractéristiques complètes
 - Bouton principal : retour à la liste
 
