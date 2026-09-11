@@ -17,7 +17,7 @@ Trouver une planche adaptée à son niveau et son style, puis choisir des fixati
 30 fiches au total :
 
 - **20 planches** — marque, modèle, niveau, style, taille, flex, prix, image
-- **10 fixations** — marque, modèle, taille compatible, flex, prix
+- **10 fixations** — marque, modèle, taille compatible, flex, prix, image
 
 ### 4. Quel écran principal ?
 
