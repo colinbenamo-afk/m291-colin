@@ -14,6 +14,7 @@ Léa, 25 ans — serveuse dans un bar à Zinal (station de ski), a commencé le 
 - Écran 1 : Liste des planches
 - Écran 2 : Fiche détail d'une planche
 - Écran 3 : Liste des fixations
+- Écran 4 : Fiche détail fixations
 
 ## Contenu de chaque écran
 
