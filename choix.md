@@ -4,7 +4,7 @@
 | Navigation      |    5   |      5       |       3     |
 | Cohérence       |    4   |      2       |        4    |
 | Accessibilité (à l'œil) |  4|   3     |          4  |
-| Fidélité au brief|  3    |     3        |       54    |
+| Fidélité au brief|  3    |     3        |       4    |
 
 # Choix de la direction visuelle
 
