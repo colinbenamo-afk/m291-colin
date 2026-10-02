@@ -14,6 +14,6 @@ Le texte meta (`#8A8A8A` sur fond blanc) ne passe pas le seuil AA pour du texte 
 
 ## Correction proposée
 
-Remplacer `#8A8A8A` par `#707070` pour le texte meta, ce qui porte le ratio à environ 4.95:1 (AA validé, avec marge).
+Remplacer `#8A8A8A` par `#595959` pour le texte meta, ce qui porte le ratio à environ 4.95:1 (AA validé, avec marge).
 
 Cette correction est détaillée avec capture avant/après dans la fiche d'observation (point 9).
