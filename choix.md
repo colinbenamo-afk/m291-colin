@@ -9,5 +9,5 @@
 # Choix de la direction visuelle
 
 Je retiens [sobre] parce que pour léa c'est la maquette la plus simple à comprendre et la plus lisible.
-J'abandonne [chaleureuse et audacieuse] parce que Léa chercher quelle que chose de très lisibible et rapide ce qui n'est pas le cas avec ces 2 maquette
-et encore moins avec chaleureuse.
+J'abandonne [chaleureuse et audacieuse] parce que Léa chercher quelle que chose de très lisibible
+et ce qui n'est pas le cas de ces deux maquettes, et encore moins de la version chaleureuse..
