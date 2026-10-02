@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoardMatch — Sobre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><div class="brand">BoardMatch</div></div>
+
+  <div class="filters">
+    <select id="filtre-niveau" class="filter-field">
+      <option value="">Niveau &#9662;</option>
+      <option value="Expert">Expert</option>
+      <option value="Interm&eacute;diaire">Interm&eacute;diaire</option>
+      <option value="D&eacute;butant">D&eacute;butant</option>
+    </select>
+    <select id="filtre-style" class="filter-field">
+      <option value="">Style &#9662;</option>
+      <option value="Freestyle">Freestyle</option>
+      <option value="All-mountain">All-mountain</option>
+      <option value="Freeride">Freeride</option>
+    </select>
+  </div>
+
+  <div class="list">
+    <div class="row" data-niveau="Expert" data-style="Freestyle">
+      <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
+      <div class="info"><div class="name">Burton Custom</div><div class="meta">Expert &middot; Freestyle</div></div>
+      <div class="price">650.-</div>
+    </div>
+    <div class="row" data-niveau="Interm&eacute;diaire" data-style="All-mountain">
+      <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
+      <div class="info"><div class="name">Rossignol XV</div><div class="meta">Interm&eacute;diaire &middot; All-mountain</div></div>
+      <div class="price">480.-</div>
+    </div>
+    <div class="row" data-niveau="D&eacute;butant" data-style="Freeride">
+      <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
+      <div class="info"><div class="name">Nitro Prime</div><div class="meta">D&eacute;butant &middot; Freeride</div></div>
+      <div class="price">390.-</div>
+    </div>
+    <div class="row" data-niveau="Expert" data-style="All-mountain">
+      <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
+      <div class="info"><div class="name">Salomon Sight</div><div class="meta">Expert &middot; All-mountain</div></div>
+      <div class="price">720.-</div>
+    </div>
+  </div>
+
+  <div class="empty" id="empty-state">Aucune planche ne correspond &agrave; ce filtre.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

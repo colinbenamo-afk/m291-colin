@@ -1,0 +1,147 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: "Space Mono", monospace;
+}
+
+.topbar,
+.filters,
+.list {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.topbar {
+  padding: 28px 24px 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.brand {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-field {
+  flex: 1;
+  max-width: 220px;
+  border: 1px solid #cfcfcf;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #444;
+  cursor: pointer;
+}
+
+.filter-field:hover {
+  border-color: #1a1a1a;
+}
+
+.list {
+  padding: 0 24px 24px;
+}
+
+/* mobile : liste simple, une planche par ligne */
+.row {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.picto {
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.meta {
+  font-size: 11px;
+  color: #595959;
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+.price {
+  font-size: 13px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* tablette : deux colonnes */
+@media (min-width: 640px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 32px;
+    padding-top: 10px;
+  }
+}
+
+/* grand ecran (ordinateur) : trois colonnes, cartes avec bordure */
+@media (min-width: 900px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 24px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+  }
+
+  .picto {
+    width: 36px;
+    height: 36px;
+    margin-right: 0;
+    margin-bottom: 14px;
+  }
+
+  .price {
+    margin-top: 10px;
+  }
+}
+
+/* pas de resultat (filtre sans correspondance) */
+.empty {
+  display: none;
+  padding: 60px 24px;
+  text-align: center;
+  color: #595959;
+  font-size: 13px;
+}
+
+.empty.visible {
+  display: block;
+}
+
+.row.hidden {
+  display: none;
+}
