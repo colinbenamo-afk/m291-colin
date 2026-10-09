@@ -4,10 +4,14 @@ je suis en 2éme année de médiamaticien
 - faire des sites internet animé 
 - faire des prompts correct
 ## Mon projet (idée en une phrase)
-non pas encore## Comment me trouver
+BoardMatch : un catalogue de matériel de snowboard pour trouver la planche (et les fixations) adaptées à son niveau, au meilleur rapport qualité/prix, sans se limiter à une marque.
+## Comment me trouver
 - GitHub : Colin 
 
 _Repo cloné et ouvert dans VS Code._ 
 
- ## Page Profile 
- - https://colinbenamo-afk.github.io/m291-colin/
+## Dossier design
+- [design/](design/)
+
+## Page Profile 
+- https://colinbenamo-afk.github.io/m291-colin/
