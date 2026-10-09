@@ -39,12 +39,12 @@ Léa, 25 ans — serveuse dans un bar à Zinal (station de ski), a commencé le 
 
 ## Palette
 
-- Fond : blanc
-- Texte : noir
-- Accent : violet
+- Fond : blanc (`#FFFFFF`)
+- Texte : noir / gris foncé (`#1A1A1A` pour nom et prix, `#444444` pour les filtres, `#595959` pour les infos secondaires niveau · style)
+- Pas de couleur d'accent : palette volontairement monochrome, cohérente avec la direction "sobre" retenue (voir `choix.md` et `contrastes.md`)
 - Attention / erreur : rouge
 
-*(Couleurs en mots pour l'instant ; hex en s7–s9.)*
+*(Correction du 09.10 : la première version de ce brief mentionnait un accent violet, qui ne correspond pas à la maquette "sobre" finalement retenue — erreur repérée en relisant le brief après le choix de direction.)*
 
 ## Interdits
 
