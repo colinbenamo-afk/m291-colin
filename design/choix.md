@@ -6,37 +6,67 @@ Persona de référence : Léa, 25 ans, serveuse à Zinal, débutante en snowboar
 
 ## Fiche 1 — Sobre
 
-**Ce qui saute aux yeux en premier** : une liste simple, filtres "Niveau ▾ / Style ▾" en haut, texte noir sur fond blanc. Quatre planches visibles sans avoir à scroller.
+**Force 1**
+- Critère : Lisibilité
+- Preuve : nom/prix en `#1A1A1A` sur fond blanc = ratio de contraste 17.4:1 (seuil AAA = 7:1, largement dépassé). Quatre planches visibles sans scroll.
 
-**Au service de la tâche de Léa** : le contraste noir/blanc est maximal, donc lisible en quelques secondes même en extérieur ou en pleine lumière. Aucune décoration ne détourne l'œil de l'info utile (nom, niveau, style, prix), alignée de façon régulière — Léa peut scanner la liste et repérer une planche "débutant" presque immédiatement.
+**Force 2**
+- Critère : Navigation
+- Preuve : les deux filtres ("Niveau ▾", "Style ▾") sont visibles en permanence en haut de l'écran, sans étape intermédiaire avant la liste.
 
-**Point fort** : rapidité de lecture, zéro friction visuelle.
+**Faiblesse 1**
+- Critère : Feedback
+- Preuve : aucun état visuel distinct n'indique qu'un filtre est actif (pas de changement de couleur ou de soulignement visible une fois sélectionné) — Léa ne peut pas confirmer d'un coup d'œil que son filtre a bien été appliqué.
 
-**Point faible** : très neutre, peu d'identité de marque — peut sembler austère par rapport à un univers snowboard/shop de sport.
+**Faiblesse 2**
+- Critère : Accessibilité
+- Preuve : dans la version initiale, le texte meta "niveau · style" en `#8A8A8A` ne passait que 3.45:1 (sous le seuil AA de 4.5:1) — corrigé depuis en `#595959` (7:1), mais c'était un vrai point faible de la première version.
+
+**Verdict** : je garde ce design parce que, pour Léa qui consulte vite sur téléphone entre deux services, la lisibilité maximale et l'absence d'étape avant la liste servent directement sa tâche (trouver une planche "débutant" en quelques secondes).
 
 ---
 
 ## Fiche 2 — Chaleureuse
 
-**Ce qui saute aux yeux en premier** : des cartes arrondies avec un dégradé orange en guise de photo, des ombres douces, une ambiance accueillante.
+**Force 1**
+- Critère : Cohérence
+- Preuve : dégradé orange, coins arrondis et ombres douces créent une ambiance "shop accueillant" homogène sur tout l'écran.
 
-**Au service de la tâche de Léa** : le ton est plus rassurant, ce qui peut mettre à l'aise une débutante qui ne se sent pas encore légitime dans l'univers snowboard. Mais chaque carte prend plus de hauteur à l'écran, donc pour voir le même nombre de planches, Léa doit scroller davantage — légèrement plus lent pour sa tâche.
+**Force 2**
+- Critère : Accessibilité
+- Preuve : texte principal `#4A2F22` sur fond `#FBF3E7` = ratio 11.09:1, largement au-dessus du seuil AAA.
 
-**Point fort** : accueillant, moins technique visuellement, adapté à une débutante.
+**Faiblesse 1**
+- Critère : Navigation
+- Preuve : les cartes prennent plus de hauteur à l'écran ; pour voir le même nombre de planches qu'en sobre (4 sans scroll), Léa doit scroller davantage — ça ralentit sa tâche.
 
-**Point faible** : scroll plus long pour couvrir la même liste, contraste texte/fond plus doux (marron sur crème) donc un peu moins net à lire vite.
+**Faiblesse 2**
+- Critère : Feedback
+- Preuve : l'accent/prix en `#B5502C` sur `#FBF3E7` n'atteint que 4.60:1 (passe l'AA mais pas l'AAA) — l'élément le plus important pour la décision de Léa (le prix) est aussi le moins contrasté de la hiérarchie visuelle.
+
+**Verdict** : j'élimine ce design parce que Léa veut aller vite (elle consulte en pause, parfois en extérieur) — le scroll supplémentaire et le prix moins contrasté ralentissent exactement ce qu'elle cherche à faire rapidement.
 
 ---
 
 ## Fiche 3 — Audacieuse
 
-**Ce qui saute aux yeux en premier** : fond noir/violet, un gros bandeau "hero" qui occupe presque un tiers de l'écran avant même d'arriver à la liste, typographie épaisse.
+**Force 1**
+- Critère : Cohérence
+- Preuve : fond noir/violet et typographie épaisse donnent une identité "sport/freestyle" forte, cohérente avec l'univers snowboard.
 
-**Au service de la tâche de Léa** : l'identité visuelle est forte, mais le bandeau hero retarde l'accès à l'information utile. Le texte gris clair sur fond sombre (ex. "Expert · Freestyle") est moins contrasté que le noir sur blanc, donc moins rapide à lire — un désavantage pour quelqu'un qui consulte vite, parfois en extérieur.
+**Force 2**
+- Critère : Accessibilité
+- Preuve : texte principal `#F5F5F7` sur fond `#0E0E12` = ratio 17.69:1 ; texte meta `#A1A1AA` sur `#0E0E12` = 7.52:1 — les deux dépassent le seuil AAA.
 
-**Point fort** : identité visuelle marquante, colle à une image "sport/freestyle".
+**Faiblesse 1**
+- Critère : Navigation
+- Preuve : le bandeau "hero" occupe près d'un tiers de l'écran avant d'arriver à la liste des planches — ça ajoute une étape avant la vraie tâche de Léa.
 
-**Point faible** : lisibilité réduite par endroits, et une étape (le hero) avant la vraie tâche.
+**Faiblesse 2**
+- Critère : Feedback
+- Preuve : l'accent violet `#A855F7` sur `#0E0E12` n'atteint que 4.87:1 (passe l'AA de 4.5:1 mais pas l'AAA de 7:1) — l'élément interactif le plus visible de la maquette est aussi le moins contrasté.
+
+**Verdict** : j'élimine ce design parce que la tâche de Léa est d'aller vite — le bandeau hero retarde l'accès à l'info utile, ce qui va à l'encontre de son besoin principal.
 
 ---
 
@@ -45,11 +75,12 @@ Persona de référence : Léa, 25 ans, serveuse à Zinal, débutante en snowboar
 | Critère | Sobre | Chaleureuse | Audacieuse |
 |---|---|---|---|
 | Lisibilité | 5 | 3 | 4 |
-| Navigation | 5 | 5 | 3 |
-| Cohérence | 4 | 2 | 4 |
-| Accessibilité (à l'œil) | 4 | 3 | 4 |
-| Fidélité au brief | 3 | 3 | 4 |
+| Navigation | 5 | 3 | 3 |
+| Feedback | 3 | 3 | 4 |
+| Cohérence | 3 | 5 | 5 |
+| Accessibilité | 5 | 4 | 4 |
+| **Total** | **21** | **18** | **20** |
 
 ## Choix de la direction visuelle
 
-Je retiens **sobre**, car pour Léa c'est la maquette la plus simple à comprendre et la plus lisible. J'abandonne chaleureuse et audacieuse : Léa cherche quelque chose de très lisible et rapide à consulter, ce qui n'est pas le cas de ces deux maquettes, et encore moins de la version chaleureuse à cause du scroll supplémentaire.
+Je retiens **sobre** : c'est la maquette qui obtient le meilleur total, et surtout celle qui sert le mieux la tâche de Léa (lisibilité maximale, zéro étape avant la liste). J'abandonne chaleureuse (scroll supplémentaire, prix moins contrasté) et audacieuse (étape hero avant la tâche, bouton principal moins contrasté) : les deux introduisent de la friction ou un délai, alors que Léa a justement besoin de vitesse et de clarté.
