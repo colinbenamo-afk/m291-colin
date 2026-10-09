@@ -17,7 +17,7 @@
 - Verbatim (si le testeur a commenté à voix haute) : « Trouvé ! »
 
 ## Problème identifié
-Peut-être un manque de couleur.
+le test confirme que la maquette est déjà efficace, et la correction de contraste est une amélioration.
 
 ## Itération — avant / après
 
