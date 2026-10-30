@@ -77,10 +77,13 @@ body {
   color: var(--color-text-muted);
   font-family: var(--font-body);
   cursor: pointer;
+  transition: border-color 150ms ease;
 }
 
-.filter-field:hover {
+.filter-field:hover,
+.filter-field:focus-visible {
   border-color: var(--color-text);
+  outline: none;
 }
 
 .list {
@@ -93,6 +96,12 @@ body {
   align-items: center;
   padding: 1.25rem 0;
   border-bottom: 0.0625rem solid var(--color-border-soft);
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+
+.row:hover,
+.row:focus-visible {
+  transform: translateY(-0.25rem);
 }
 
 .picto {
@@ -148,6 +157,11 @@ body {
     align-items: flex-start;
     border: 0.0625rem solid var(--color-border);
     padding: 1.25rem;
+  }
+
+  .row:hover,
+  .row:focus-visible {
+    border-color: var(--color-text);
   }
 
   .picto {
@@ -305,4 +319,13 @@ body {
   margin-top: var(--space-2);
   font-size: 0.8125rem;
   color: var(--color-text);
+}
+
+/* e3-5 — accessibilité vestibulaire : on annule toutes les micro-interactions
+   si l'utilisateur a activé la réduction d'animation dans son système. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
