@@ -197,3 +197,35 @@ body {
   color: var(--color-meta);
   font-size: 0.6875rem;
 }
+
+/* champ de recherche (e3-4) */
+.search-field {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4) 0;
+}
+
+.search-field label {
+  display: block;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.375rem;
+}
+
+.search-field input[type="search"] {
+  width: 100%;
+  max-width: 24rem;
+  border: 0.0625rem solid var(--color-border-strong);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.8125rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  transition: border-color 150ms ease;
+}
+
+.search-field input[type="search"]:focus-visible {
+  outline: none;
+  border-color: var(--color-text);
+}

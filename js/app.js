@@ -5,6 +5,7 @@ const conteneurListe = document.getElementById("liste-planches");
 const messageVide = document.getElementById("empty-state");
 const selectNiveau = document.getElementById("filtre-niveau");
 const selectStyle = document.getElementById("filtre-style");
+const champRecherche = document.getElementById("recherche");
 
 // On garde les planches en mémoire une fois chargées, pour pouvoir
 // les refiltrer sans refaire une requête réseau à chaque changement de filtre.
@@ -38,15 +39,21 @@ function afficherPlanches(liste) {
   conteneurListe.innerHTML = liste.map(carteHTML).join("");
 }
 
-// Applique les filtres niveau/style actuellement sélectionnés sur les planches en mémoire.
+// Applique le filtre niveau, le filtre style ET la recherche texte, tous en même temps,
+// sur les planches en mémoire (jamais sur le tableau "planches" lui-même).
 function filtrer() {
   const niveauChoisi = selectNiveau.value; // "" si "Niveau" (pas de filtre)
   const styleChoisi = selectStyle.value;   // "" si "Style" (pas de filtre)
+  const motCle = champRecherche.value.toLowerCase().trim(); // "" si champ vide
 
   const resultat = planches.filter(function (planche) {
     const correspondNiveau = niveauChoisi === "" || planche.niveau === niveauChoisi;
     const correspondStyle = styleChoisi === "" || planche.style === styleChoisi;
-    return correspondNiveau && correspondStyle;
+    // .includes("") retourne toujours true, donc un champ de recherche vide ne filtre rien.
+    const correspondRecherche =
+      planche.marque.toLowerCase().includes(motCle) ||
+      planche.modele.toLowerCase().includes(motCle);
+    return correspondNiveau && correspondStyle && correspondRecherche;
   });
 
   afficherPlanches(resultat);
@@ -78,6 +85,9 @@ fetch("./data.json")
     afficherPlanches(planches);
     selectNiveau.addEventListener("change", filtrer);
     selectStyle.addEventListener("change", filtrer);
+    // "input" se déclenche à chaque frappe, contrairement à "change" (qui attend la perte de focus) :
+    // c'est ce qui rend la recherche instantanée.
+    champRecherche.addEventListener("input", filtrer);
   })
   .catch(function (erreur) {
     // État 4 — Erreur : réseau coupé, fichier manquant ou JSON invalide.
