@@ -229,3 +229,80 @@ body {
   outline: none;
   border-color: var(--color-text);
 }
+
+/* formulaire de contact (e3-4) */
+.contact {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: var(--space-4);
+  border-top: 0.0625rem solid var(--color-border);
+}
+
+.contact h2 {
+  font-family: var(--font-title);
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 24rem;
+}
+
+.contact label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.contact input[type="text"],
+.contact textarea {
+  border: 0.0625rem solid var(--color-border-strong);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.8125rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  resize: vertical;
+  transition: border-color 150ms ease;
+}
+
+.contact input[type="text"]:focus-visible,
+.contact textarea:focus-visible {
+  outline: none;
+  border-color: var(--color-text);
+}
+
+.contact button {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  border: 0.0625rem solid var(--color-text);
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 0.625rem 1.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.contact button:hover,
+.contact button:focus-visible {
+  opacity: 0.85;
+}
+
+.contact button:active {
+  transform: translateY(0.0625rem);
+}
+
+#confirmation {
+  margin-top: var(--space-2);
+  font-size: 0.8125rem;
+  color: var(--color-text);
+}

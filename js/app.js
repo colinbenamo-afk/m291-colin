@@ -94,3 +94,21 @@ fetch("./data.json")
     console.error("Détail technique :", erreur);
     conteneurListe.innerHTML = "<p class='etat-erreur'>&#9888; Impossible de charger les planches. Veuillez r&eacute;essayer ult&eacute;rieurement.</p>";
   });
+
+// --- Formulaire de contact (question sur une planche) ---
+// On intercepte submit pour éviter le rechargement de la page (comportement par défaut du HTML).
+const formulaire = document.getElementById("form-contact");
+
+formulaire.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const nom = document.getElementById("champ-nom").value.trim();
+  const message = document.getElementById("champ-message").value.trim();
+
+  if (nom.length === 0 || message.length === 0) {
+    return; // Les deux champs sont "required" : le navigateur a déjà averti l'utilisateur.
+  }
+
+  document.getElementById("confirmation").hidden = false;
+  formulaire.reset();
+});
