@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoardMatch — Catalogue de fixations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand">BoardMatch</h1>
+    <nav class="catalog-switch" aria-label="Changer de catalogue">
+      <a href="index.html" class="switch-link">Planches</a>
+      <a href="fixations.html" class="switch-link is-active">Fixations</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="visually-hidden">Liste des fixations disponibles</h2>
+    <section class="list" id="liste-fixations">
+      <!-- Les cartes fixations sont injectées ici par js/fixations.js (fetch sur data.json) -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 &mdash; Colin Benamo-van Dijk</p>
+  </footer>
+
+  <script src="js/fixations.js"></script>
+</body>
+</html>
