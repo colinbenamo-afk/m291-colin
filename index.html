@@ -33,38 +33,7 @@
   <main>
     <h2 class="visually-hidden">Liste des planches disponibles</h2>
     <section class="list" id="liste-planches">
-      <article class="row" data-niveau="Expert" data-style="Freestyle">
-        <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
-        <div class="info">
-          <h3 class="name">Burton Custom</h3>
-          <p class="meta">Expert &middot; Freestyle</p>
-        </div>
-        <p class="price">650.-</p>
-      </article>
-      <article class="row" data-niveau="Interm&eacute;diaire" data-style="All-mountain">
-        <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
-        <div class="info">
-          <h3 class="name">Rossignol XV</h3>
-          <p class="meta">Interm&eacute;diaire &middot; All-mountain</p>
-        </div>
-        <p class="price">480.-</p>
-      </article>
-      <article class="row" data-niveau="D&eacute;butant" data-style="Freeride">
-        <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
-        <div class="info">
-          <h3 class="name">Nitro Prime</h3>
-          <p class="meta">D&eacute;butant &middot; Freeride</p>
-        </div>
-        <p class="price">390.-</p>
-      </article>
-      <article class="row" data-niveau="Expert" data-style="All-mountain">
-        <svg class="picto" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="3.2" transform="rotate(-20 12 12)"/></svg>
-        <div class="info">
-          <h3 class="name">Salomon Sight</h3>
-          <p class="meta">Expert &middot; All-mountain</p>
-        </div>
-        <p class="price">720.-</p>
-      </article>
+      <!-- Les cartes planches sont injectées ici par js/app.js (fetch sur data.json) -->
     </section>
 
     <p class="empty" id="empty-state">Aucune planche ne correspond &agrave; ce filtre.</p>
@@ -74,6 +43,6 @@
     <p>&copy; 2026 &mdash; Colin Benamo-van Dijk</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

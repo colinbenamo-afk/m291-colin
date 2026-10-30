@@ -162,6 +162,16 @@ body {
   }
 }
 
+/* etats dynamiques pilotes par js/app.js (chargement, vide, erreur) */
+.etat-chargement,
+.etat-vide,
+.etat-erreur {
+  padding: 3.75rem var(--space-4);
+  text-align: center;
+  color: var(--color-meta);
+  font-size: 0.8125rem;
+}
+
 /* pas de resultat (filtre sans correspondance) */
 .empty {
   display: none;
